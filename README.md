@@ -1,3 +1,4 @@
 # CS292-CJSS
-SelynLee
+Selyn Lee
 Carlos Venegas
+Jessie Quach
