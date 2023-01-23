@@ -13,39 +13,49 @@ public class SlideFunction : MonoBehaviour
     private Vector2 newSize;
     private Vector3 currLocation;
     private Vector3 newLocation;
+    private bool isChanged;
     // Start is called before the first frame update
     void Start()
     {
         //baseHeight=targetCollider.size.y;
         baseSize=targetCollider.size;
         newSize=new Vector2(targetCollider.size.x, newHeight);
+        isChanged=false;
     }
 
     // Update is called once per frame
     void Update()
     {
         
-        if(targetCollider.IsTouching(ground))
+        if(targetCollider.IsTouching(ground) && Input.GetKey("down"))
         {
-            currLocation=targetTransform.position;
-            newLocation=currLocation;
-            if(newHeight>baseHeight)
+            if(!isChanged)
             {
-                newLocation.y+=(newHeight-baseHeight)/2;
+                currLocation=targetTransform.position;
+                newLocation=currLocation;
+            
+                if(newHeight>baseHeight)
+                {
+                    newLocation.y+=(newHeight/2);
+                }
+                else if(newHeight<baseHeight)
+                {
+                    newLocation.y-=newHeight;
+                }
+                targetTransform.position=newLocation;
+                targetCollider.size=newSize;
+                isChanged=true;
+                //play animation
             }
-            else if(newHeight<baseHeight)
-            {
-                newLocation.y-=(newHeight-baseHeight)/2;
-            }
-            targetTransform.position=newLocation;
-            targetCollider.size=newSize;
-            //play animation
         }
         else
         {
-            transform.position=currLocation;
-            targetCollider.size=baseSize;
-            //stop animation
+            if(isChanged)
+            {
+                transform.position=currLocation;
+                targetCollider.size=baseSize;
+                //stop animation
+            }
         }
     }
 }
