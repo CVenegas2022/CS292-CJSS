@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2007425975348226450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2007425975348226448}
+  - component: {fileID: 2007425975348226449}
+  m_Layer: 0
+  m_Name: 'Spawnner '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2007425975348226448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007425975348226450}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2007425975348226449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007425975348226450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d012ee9fc11143cbada333edb0f9d7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  easyObstacle1: {fileID: 6305465502566792458, guid: 24e01b328886147708dc31abe82dc53c, type: 3}
+  easyObstacle2: {fileID: 6858827034241359624, guid: 2e0040d29c3f9460c838e78eab24c980, type: 3}
+  easyObstacle3: {fileID: 7549438548503741404, guid: deb79c27efbf942fba300ceb28447d8d, type: 3}
+  mediumObstacle1: {fileID: 2757549985638053560, guid: 9f0c6c760486045e28a7bc01b5645f74, type: 3}
+  mediumObstacle2: {fileID: 2128519015804671855, guid: 39c0229700a864a7998c8396159da84c, type: 3}
+  hardObstacle1: {fileID: 1027149321553742630, guid: 5a4fdfa3aad5a4c8dadfcba5b98ef1da, type: 3}
+  hardObstacle2: {fileID: 2547617983158425136, guid: d7ae7fdfe01084f47900ef80d7772ac5, type: 3}
+  hardObstacle3: {fileID: 1033774654143859976, guid: b10a07b780d6e4a92b4b3b372c02cdb2, type: 3}
+  hardObstacle4: {fileID: 836591864238592163, guid: 0200d910970c8465a8e51dda89727292, type: 3}
+  timeToSpawn: 1.5
