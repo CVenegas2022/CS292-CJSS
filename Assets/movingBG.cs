@@ -19,6 +19,6 @@ public class movingBG : MonoBehaviour
     void Update()
     {
         offset += (Time.deltaTime * speed) / 10f;
-        mat.SetTextureOffset("_MainTex", new Vector2(offset, 0))
+        mat.SetTextureOffset("_MainTex", new Vector2(offset, 0));
     }
 }
