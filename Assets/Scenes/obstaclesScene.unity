@@ -242,7 +242,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d012ee9fc11143cbada333edb0f9d7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 7549438548503741404, guid: deb79c27efbf942fba300ceb28447d8d, type: 3}
+  easyObstacle1: {fileID: 6305465502566792458, guid: 24e01b328886147708dc31abe82dc53c, type: 3}
+  easyObstacle2: {fileID: 6858827034241359624, guid: 2e0040d29c3f9460c838e78eab24c980, type: 3}
+  easyObstacle3: {fileID: 7549438548503741404, guid: deb79c27efbf942fba300ceb28447d8d, type: 3}
+  mediumObstacle: {fileID: 0}
+  hardObstacle: {fileID: 0}
+  extrememObstacle: {fileID: 0}
   timeToSpawn: 1.5
 --- !u!4 &522874051
 Transform:
@@ -1165,7 +1170,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.8962264, g: 0.114142045, b: 0.19125922, a: 1}
   m_FlipX: 0
