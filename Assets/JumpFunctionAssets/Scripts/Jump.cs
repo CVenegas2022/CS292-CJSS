@@ -8,7 +8,7 @@ public class Jump : MonoBehaviour
     public float maxHeight = 5f;
     public float jumpGrav = 0f;
     public float fallGrav = 5f;
-    public BoxCollider2D ground;
+    public Collider2D ground;
     private bool isGrounded;
     private bool canTravel;
     private bool keyHeld;
