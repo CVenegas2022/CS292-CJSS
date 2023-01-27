@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5357939893768729565}
   - component: {fileID: 2267181024522953537}
   - component: {fileID: -2243062318580204595}
-  - component: {fileID: -5137995863549566666}
+  - component: {fileID: -6821432959541410015}
   m_Layer: 0
   m_Name: mediumRock
   m_TagString: Untagged
@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
---- !u!58 &-5137995863549566666
-CircleCollider2D:
+--- !u!61 &-6821432959541410015
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113,5 +113,15 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.53, y: 0.53}
+    newSize: {x: 0.53, y: 0.53}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.265
+  m_Size: {x: 0.53, y: 0.53}
+  m_EdgeRadius: 0

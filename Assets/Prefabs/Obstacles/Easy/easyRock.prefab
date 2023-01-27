@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 46397293394379159}
   - component: {fileID: 6969034811239561685}
   - component: {fileID: 7579483777673935307}
-  - component: {fileID: 5358214020429416839}
+  - component: {fileID: -1392987711766150350}
   m_Layer: 0
   m_Name: easyRock
   m_TagString: Untagged
@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
---- !u!58 &5358214020429416839
-CircleCollider2D:
+--- !u!61 &-1392987711766150350
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113,5 +113,15 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.28, y: 0.15}
+    newSize: {x: 0.28, y: 0.15}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.14
+  m_Size: {x: 0.28, y: 0.15}
+  m_EdgeRadius: 0
