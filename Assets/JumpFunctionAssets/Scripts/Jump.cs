@@ -38,7 +38,7 @@ public class Jump : MonoBehaviour
 
     }
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         //used this forum to figure out how to reference an object's BoxCollider2D: https://forum.unity.com/threads/check-if-two-colliders-are-touching.693817/
         
