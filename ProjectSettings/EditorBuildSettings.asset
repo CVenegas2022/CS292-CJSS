@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/GameOverScreen/gameOverScreen.unity
+    guid: 84b865e602d0ba14ea36cf3167c7cd43
   m_configObjects: {}

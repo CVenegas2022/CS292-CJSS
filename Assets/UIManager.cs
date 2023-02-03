@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//restart function
-public class GameManager : MonoBehaviour
+public class UIManager : MonoBehaviour
 {
-    int maxPlatform
-
+    public GameObject gameOverUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +15,15 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            SceneManager.LoadScene("titleScreen(2)");
+        }
         
     }
 
+    public void gameOver()
+    {
+        gameOverUI.SetActive(true);
+    }
 }
