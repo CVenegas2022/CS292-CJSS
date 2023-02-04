@@ -5,25 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    public GameObject gameOverUI;
+    public GameObject imageRestart;
     // Start is called before the first frame update
     void Start()
     {
-        
+    
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {/*
         if (Input.GetMouseButtonDown(0))
         {
             SceneManager.LoadScene("titleScreen(2)");
-        }
+        }*/
         
     }
 
-    public void gameOver()
+    public void Restart()
     {
-        gameOverUI.SetActive(true);
+        SceneManager.LoadScene("DemoScene1");
     }
 }
