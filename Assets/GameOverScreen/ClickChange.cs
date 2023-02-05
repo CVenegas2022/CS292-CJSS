@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManager;
 using UnityEngine.SceneManagement;
 
 public class ClickChange : MonoBehaviour
@@ -18,15 +17,13 @@ public class ClickChange : MonoBehaviour
         
     }
 
-    public void OnClickMainMenu() 
-    {
+    public void OnClickMainMenu() {
+        Debug.Log("Changing to the titleScreen(2)");
         SceneManager.LoadScene("titleScreen(2)");
-        Debug.Log("Game Scene transition1");
     }
 
-    public void onClickRestart() 
-    {
+    public void OnClickRestart() {
+        Debug.Log("Changing to the restartScreen");
         SceneManager.LoadScene("DemoScence1");
-        Debug.Log("Game Scene transition2");
     }
 }
