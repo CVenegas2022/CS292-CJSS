@@ -273,6 +273,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1464591169713250407, guid: def6fb010fd0f4be7bad1a5c8d55a263, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5806455278512425037, guid: def6fb010fd0f4be7bad1a5c8d55a263, type: 3}
       propertyPath: m_Name
       value: mainMenuPrefab
@@ -307,7 +311,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8448940145862190502, guid: def6fb010fd0f4be7bad1a5c8d55a263, type: 3}
       propertyPath: gameScene
-      value: DemoScence1
+      value: DemoScene2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: def6fb010fd0f4be7bad1a5c8d55a263, type: 3}
