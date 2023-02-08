@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2427299342600735825}
   - component: {fileID: 4071406878874015598}
   - component: {fileID: -3396989798861640156}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mediumSpike
   m_TagString: Untagged
   m_Icon: {fileID: 0}

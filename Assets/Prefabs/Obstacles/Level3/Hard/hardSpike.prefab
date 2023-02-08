@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8437450202919333798}
   - component: {fileID: 1323926156524127028}
   - component: {fileID: -8788010895236539968}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: hardSpike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
