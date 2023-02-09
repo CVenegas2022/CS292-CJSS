@@ -9,6 +9,7 @@ public class Jump : MonoBehaviour
     public float jumpGrav = 0f;
     public float fallGrav = 5f;
     public Collider2D ground;
+    public AudioSource myAS; //calm down, it stands for AudioSource
     private bool isGrounded;
     private bool canTravel;
     private bool keyHeld;
@@ -97,6 +98,7 @@ public class Jump : MonoBehaviour
                     keyHeld=true;
                     
                     //play jump animation
+                    myAS.Play();
                     GetComponent<Animator>().SetTrigger("startJump");
 
                     //move towards jumpPos
