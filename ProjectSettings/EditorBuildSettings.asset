@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/FinalDemo2 1/gameOverScreenDemo2-1.unity
+    guid: e609de0e5ac19427db887344809111e6
+  - enabled: 1
     path: Assets/Scenes/titleScreen(2).unity
     guid: e900c68d3ce5a46c18ce017aabf1d1fd
   - enabled: 1
@@ -20,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FinalDemo2/titleScreenDemo2.unity
     guid: a5c2634c013cf48d8ac776044227eb0b
+  - enabled: 1
+    path: Assets/FinalDemo2 1/DemoScene2-1.unity
+    guid: 5a6ea2598dabe4562a2ed302a88d6260
+  - enabled: 1
+    path: Assets/FinalDemo2 1/titleScreenDemo2-1.unity
+    guid: be5d19b9643144474996a66653484a03
   m_configObjects: {}
