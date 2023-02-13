@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2680247640730171978}
   - component: {fileID: 6447472890159612096}
-  - component: {fileID: -6737754751483822681}
+  - component: {fileID: 7134989540160430227}
   m_Layer: 3
   m_Name: hardFires
   m_TagString: Untagged
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 9
---- !u!61 &-6737754751483822681
+--- !u!61 &7134989540160430227
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,7 +61,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 7.0961337, y: -1.8540435}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -72,7 +72,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.567109, y: 0.9117136}
   m_EdgeRadius: 0
 --- !u!1 &6125741537602417450
 GameObject:
