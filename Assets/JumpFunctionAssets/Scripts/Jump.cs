@@ -9,6 +9,8 @@ public class Jump : MonoBehaviour
     public float jumpGrav = 0f;
     public float fallGrav = 5f;
     public Collider2D ground;
+    public AudioSource jumpSource;
+    public AudioSource runSource;
     private bool isGrounded;
     private bool canTravel;
     private bool keyHeld;
@@ -48,6 +50,12 @@ public class Jump : MonoBehaviour
             //set jumpPos to current position with max height added to the y value
             jumpPos = new Vector3(transform.position.x, transform.position.y+maxHeight, transform.position.z);
             
+            //play run sound
+            if(!runSource.isPlaying)
+            {
+                runSource.Play();
+            }
+
             //if not marked as on the ground
             if(!isGrounded)
             {
@@ -96,6 +104,11 @@ public class Jump : MonoBehaviour
                     //mark key as being held down
                     keyHeld=true;
                     
+                    //stop run sound
+                    runSource.Pause();
+
+                    //play jump sound
+                    jumpSource.Play();
                     //play jump animation
                     GetComponent<Animator>().SetTrigger("startJump");
 
@@ -112,6 +125,10 @@ public class Jump : MonoBehaviour
             //if not pressing up button
             else
             {
+                if(jumpSource.isPlaying)
+                {
+                    jumpSource.Stop();
+                }
                 //mark key as not being held
                 keyHeld=false;
                 //prevent the player from being able to move up
