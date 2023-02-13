@@ -5,11 +5,16 @@ using UnityEngine.UI;
 
 public class hbHealthManager : MonoBehaviour
 {
-    public int totalCherries = 3;
+    public static int totalCherries = 3;
 
     public Image[] cherries;
     public Sprite cherry;
     public Sprite bug;
+
+    void Awake()
+    {
+        totalCherries = 3;
+    }
 
     // Update is called once per frame
     void Update()

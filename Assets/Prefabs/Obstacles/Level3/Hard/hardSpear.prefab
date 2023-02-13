@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8161550953854599383}
   - component: {fileID: -5075021262847094999}
   - component: {fileID: -1355718661564451977}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: hardSpear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
