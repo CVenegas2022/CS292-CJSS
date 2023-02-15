@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuScript : MonoBehaviour
 {
     public string gameScene;
+    public string creditScene;
 
     private void Awake()
     {
@@ -27,7 +28,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void openCredits()
     {
-        // Add logic to open the credits here
+         SceneManager.LoadScene(creditScene);
     }
 
     public void openHighScores()
