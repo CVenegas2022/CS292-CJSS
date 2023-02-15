@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 //using System.Collections;
 
 public class PlayerCollision : MonoBehaviour
@@ -15,6 +16,7 @@ public class PlayerCollision : MonoBehaviour
             if(hbHealthManager.totalCherries <= 0)
             {
                 //gameover
+                SceneManager.LoadScene("gameOverScreenDemo2-1");
             }
         }
     }
