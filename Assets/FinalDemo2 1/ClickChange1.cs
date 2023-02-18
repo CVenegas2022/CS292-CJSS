@@ -26,4 +26,8 @@ public class ClickChange1 : MonoBehaviour
         // Debug.Log("Changing to the restartScreen");
         SceneManager.LoadScene("DemoScene2-1");
     }
+
+    public void OnClickTutorial() {
+        SceneManager.LoadScene("tutorial1");
+    }
 }
