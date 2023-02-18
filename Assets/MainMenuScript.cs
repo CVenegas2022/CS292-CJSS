@@ -7,6 +7,8 @@ public class MainMenuScript : MonoBehaviour
 {
     public string gameScene;
     public string creditScene;
+    GameObject AudioManager;
+    AudioSource backmusic;
 
     private void Awake()
     {
@@ -34,6 +36,14 @@ public class MainMenuScript : MonoBehaviour
     public void openHighScores()
     {
         // Add logic to open the high scores here
+    }
+
+    public void BGM1OffButton() {
+        AudioManager = GameObject.Find("AudioManager");
+        backmusic = AudioManager.GetComponent<AudioSource>();
+        if(backmusic.isPlaying) {
+        backmusic.Pause();
+        }
     }
     
 }
