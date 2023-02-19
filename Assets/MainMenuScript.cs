@@ -35,6 +35,10 @@ public class MainMenuScript : MonoBehaviour
     {
         // Add logic to open the high scores here
     }
+
+    public void openTutorial() {
+        SceneManager.LoadScene("tutorial1");
+    }
     
 }
 

@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Tutorial/tutorial1.unity
+    guid: 32a321709450d3945b787282dd96c0e1
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -32,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/creditScene.unity
     guid: 624e1615b1640439eadf7cf2b2c7c0ca
+  - enabled: 1
+    path: Assets/Tutorial/tutorial2.unity
+    guid: c781300e4765d754fa5dcca55d46221e
+  - enabled: 1
+    path: Assets/Tutorial/tutorial3.unity
+    guid: c9f3cfe0a2abd124c91d987718a36b44
   m_configObjects: {}
