@@ -13,6 +13,7 @@ public class PlayerCollision : MonoBehaviour
     private bool isInvincible;
     private Color baseColor;
     private Color phantom;
+    
 
     void Start()
     {
@@ -55,6 +56,10 @@ public class PlayerCollision : MonoBehaviour
                 //gameover
                 SceneManager.LoadScene("gameOverScreenDemo2-1");
             }
+        }
+
+        if(collision.gameObject.name == "health(Clone)" && hbHealthManager.totalCherries < 3) {
+            hbHealthManager.totalCherries++;
         }
     }
 

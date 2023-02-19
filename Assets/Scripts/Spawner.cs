@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    public GameObject health;
+    private int healthCount = 0;
     public GameObject easyObstacle1_1;
     public GameObject easyObstacle1_2;
     public GameObject easyObstacle1_3;
@@ -21,6 +23,12 @@ public class Spawner : MonoBehaviour
     public GameObject hardObstacle3_2;
     public GameObject hardObstacle3_3;
     public GameObject hardObstacle3_4;
+    public GameObject mediumObstacle4_1;
+    public GameObject mediumObstacle4_2;
+    public GameObject hardObstacle4_1;
+    public GameObject hardObstacle4_2;
+    public GameObject hardObstacle4_3;
+    public GameObject hardObstacle4_4;
     public float timeToSpawn = 1.8f;
     private float timer = 0;
     private float time = 0;
@@ -95,7 +103,14 @@ public class Spawner : MonoBehaviour
             }
         }
 
-        if (time >= 50) {
+        if (time >= 47 && time <=48 && healthCount == 0) {
+            GameObject newHealth = Instantiate(health);
+            Destroy(newHealth, 10);
+            healthCount += 1;
+        }
+
+
+        if (time >= 50 && time < 70) {
             timeToSpawn = 1.2f;
             if (timer > timeToSpawn) {
                 float randomNumber = Random.Range(0f, 200f);
@@ -155,6 +170,57 @@ public class Spawner : MonoBehaviour
                 }
             }
         }
+
+        if (time >= 72 && time <= 73 && healthCount == 1) {
+            GameObject newHealth = Instantiate(health);
+            Destroy(newHealth, 10);
+            healthCount += 1;
+        }
+
+        if (time >= 75) {
+            timeToSpawn = 1.1f;
+            if (timer > timeToSpawn) {
+                float randomNumber = Random.Range(0f, 200f);
+                if (randomNumber < 33) {
+                    // Debug.Log(timer);
+                    GameObject newMediumObstacle1 = Instantiate(mediumObstacle4_1);
+                    Destroy(newMediumObstacle1, 10);
+                    timer = 0;
+                }
+                else if (randomNumber >= 33 && randomNumber < 66) {
+                    // Debug.Log(timer);
+                    GameObject newMediumObstacle2 = Instantiate(mediumObstacle4_2);
+                    Destroy(newMediumObstacle2, 10);
+                    timer = 0;
+                }
+                else if (randomNumber >= 66 && randomNumber < 100) {
+                    // Debug.Log(timer);
+                    GameObject newHardObstacle1 = Instantiate(hardObstacle4_1);
+                    Destroy(newHardObstacle1, 10);
+                    timer = 0;
+                }
+                else if (randomNumber >= 100 && randomNumber < 133) {
+                    // Debug.Log(timer);
+                    GameObject newHardObstacle2 = Instantiate(hardObstacle4_2);
+                    Destroy(newHardObstacle2, 10);
+                    timer = 0;
+                }
+                else if (randomNumber >= 133 && randomNumber < 166) {
+                    // Debug.Log(timer);
+                    GameObject newHardObstacle2 = Instantiate(hardObstacle4_3);
+                    Destroy(newHardObstacle2, 10);
+                    timer = 0;
+                }
+                else {
+                    // Debug.Log(timer);
+                    GameObject newHardObstacle3 = Instantiate(hardObstacle4_4);
+                    Destroy(newHardObstacle3, 10);
+                    timer = 0;
+                }
+            }
+        }
+
+
 
         timer += Time.deltaTime;
     }

@@ -801,6 +801,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2007425975348226449, guid: e7496c9f4b77945d5876f55c43b274ca, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 2278874200043930442, guid: a9b78013bb97247e3b42534419b360e6, type: 3}
+    - target: {fileID: 2007425975348226449, guid: e7496c9f4b77945d5876f55c43b274ca, type: 3}
       propertyPath: timeToSpawn
       value: 1.8
       objectReference: {fileID: 0}
@@ -861,6 +865,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1033774654143859976, guid: b10a07b780d6e4a92b4b3b372c02cdb2, type: 3}
     - target: {fileID: 2007425975348226449, guid: e7496c9f4b77945d5876f55c43b274ca, type: 3}
+      propertyPath: hardObstacle4_1
+      value: 
+      objectReference: {fileID: 4038380864930555228, guid: 0cda8b70fb24f4c658fd12c4b8720101, type: 3}
+    - target: {fileID: 2007425975348226449, guid: e7496c9f4b77945d5876f55c43b274ca, type: 3}
+      propertyPath: hardObstacle4_2
+      value: 
+      objectReference: {fileID: 836591864238592163, guid: ff42529349cbe483294900540a3bb208, type: 3}
+    - target: {fileID: 2007425975348226449, guid: e7496c9f4b77945d5876f55c43b274ca, type: 3}
+      propertyPath: hardObstacle4_3
+      value: 
+      objectReference: {fileID: 2547617983158425136, guid: a33ab5391a3b14046a7963870e38860a, type: 3}
+    - target: {fileID: 2007425975348226449, guid: e7496c9f4b77945d5876f55c43b274ca, type: 3}
+      propertyPath: hardObstacle4_4
+      value: 
+      objectReference: {fileID: 1033774654143859976, guid: b66bbc561fa934cf79e5713a78903348, type: 3}
+    - target: {fileID: 2007425975348226449, guid: e7496c9f4b77945d5876f55c43b274ca, type: 3}
       propertyPath: mediumObstacle2_1
       value: 
       objectReference: {fileID: 2757549985638053560, guid: 9f0c6c760486045e28a7bc01b5645f74, type: 3}
@@ -876,6 +896,14 @@ PrefabInstance:
       propertyPath: mediumObstacle3_2
       value: 
       objectReference: {fileID: 2128519015804671855, guid: 24d1b8bf5a8c547ff979c60d175b2a02, type: 3}
+    - target: {fileID: 2007425975348226449, guid: e7496c9f4b77945d5876f55c43b274ca, type: 3}
+      propertyPath: mediumObstacle4_1
+      value: 
+      objectReference: {fileID: 2757549985638053560, guid: 10af395d4796b4708a7dee9fba69bdef, type: 3}
+    - target: {fileID: 2007425975348226449, guid: e7496c9f4b77945d5876f55c43b274ca, type: 3}
+      propertyPath: mediumObstacle4_2
+      value: 
+      objectReference: {fileID: 2128519015804671855, guid: 6e253116c27d2460f9ca2c5151615d37, type: 3}
     - target: {fileID: 2007425975348226450, guid: e7496c9f4b77945d5876f55c43b274ca, type: 3}
       propertyPath: m_Name
       value: 'Spawnner '
