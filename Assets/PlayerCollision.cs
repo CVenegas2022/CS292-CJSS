@@ -5,19 +5,19 @@ using UnityEngine.SceneManagement;
 //using System.Collections;
 public class PlayerCollision : MonoBehaviour
 {
-    public int seconds = 3;
+    public float invincTime = 3;
     public int c = 0;
     public SpriteRenderer playerSprite;
-    private float iFrames;
-    private float frameTracker;
+    //private float iFrames;
+    private float timeTracker;
     private bool isInvincible;
     private Color baseColor;
     private Color phantom;
 
     void Start()
     {
-        iFrames=60*seconds;
-        frameTracker=0f;
+        //iFrames=60*seconds;
+        timeTracker=0f;
         isInvincible=false;
         baseColor=playerSprite.color;
         phantom=baseColor;
@@ -28,14 +28,14 @@ public class PlayerCollision : MonoBehaviour
     {
         if(isInvincible)
         {
-            if(frameTracker<=iFrames)
+            if(timeTracker<=invincTime)
             {
-                frameTracker++;
+                timeTracker += Time.deltaTime;
             }
             else
             {
                 isInvincible=false;
-                frameTracker=0f;
+                timeTracker=0f;
                 playerSprite.color=baseColor;
             }
         }
