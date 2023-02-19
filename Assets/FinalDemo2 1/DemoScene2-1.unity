@@ -353,7 +353,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6edfdeba36ddd1a458725a431190f4d5, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.4
   m_Pitch: 1
@@ -1594,7 +1594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62848127f1c8949399884d64602193be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 3
+  invincTime: 3
   c: 0
   playerSprite: {fileID: 1531557119}
 --- !u!212 &1531557119 stripped
