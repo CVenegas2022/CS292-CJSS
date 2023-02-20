@@ -39,6 +39,17 @@ public class MainMenuScript : MonoBehaviour
     public void openTutorial() {
         SceneManager.LoadScene("tutorial1");
     }
+
+     public void BGM1OffButton() {
+        GameObject AudioManager;
+        AudioSource backmusic;
+
+        AudioManager = GameObject.Find("AudioManager");
+        backmusic = AudioManager.GetComponent<AudioSource>();
+        if(backmusic.isPlaying) {
+            backmusic.Pause();
+        }
+    }
     
 }
 
