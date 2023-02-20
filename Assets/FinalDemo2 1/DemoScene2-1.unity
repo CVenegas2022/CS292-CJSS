@@ -1882,6 +1882,7 @@ MonoBehaviour:
   c: 0
   playerSprite: {fileID: 1531557119}
   hitSource: {fileID: 1049089400}
+  healthSource: {fileID: 578938897}
 --- !u!212 &1531557119 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 7385542223688745097, guid: 7631280d7a4294e5cbc39838b66198ac, type: 3}
