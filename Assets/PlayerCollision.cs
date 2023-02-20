@@ -13,6 +13,8 @@ public class PlayerCollision : MonoBehaviour
     private bool isInvincible;
     private Color baseColor;
     private Color phantom;
+    public AudioSource hitSource;
+    public AudioSource healthSource;
     
 
     void Start()
@@ -46,6 +48,10 @@ public class PlayerCollision : MonoBehaviour
     {
         if((collision.gameObject.name == "mediumSpike(Clone)" || collision.gameObject.name == "hardFires(Clone)" || collision.gameObject.name == "hardSpear(Clone)" || collision.gameObject.name == "hardSpike(Clone)") && !isInvincible)
         {
+            if(!hitSource.isPlaying)
+            {
+                hitSource.Play();
+            }
 
             hbHealthManager.totalCherries --;
             isInvincible=true;
@@ -60,6 +66,7 @@ public class PlayerCollision : MonoBehaviour
 
         if(collision.gameObject.name == "health(Clone)" && hbHealthManager.totalCherries < 3) {
             hbHealthManager.totalCherries++;
+            healthSource.Play();
         }
     }
 
