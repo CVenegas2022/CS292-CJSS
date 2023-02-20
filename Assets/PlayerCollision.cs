@@ -14,6 +14,7 @@ public class PlayerCollision : MonoBehaviour
     private Color baseColor;
     private Color phantom;
     public AudioSource hitSource;
+    public AudioSource healthSource;
     
 
     void Start()
@@ -65,6 +66,7 @@ public class PlayerCollision : MonoBehaviour
 
         if(collision.gameObject.name == "health(Clone)" && hbHealthManager.totalCherries < 3) {
             hbHealthManager.totalCherries++;
+            healthSource.Play();
         }
     }
 
