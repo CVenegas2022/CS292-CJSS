@@ -183,8 +183,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'HIGHSCORE: 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ad3ddd459ae584a01ae95daeaccffdaa, type: 2}
-  m_sharedMaterial: {fileID: -5197076307550653399, guid: ad3ddd459ae584a01ae95daeaccffdaa, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fccc9c9c746f1ec45acf04544ed1561c, type: 2}
+  m_sharedMaterial: {fileID: -3795152396764579206, guid: fccc9c9c746f1ec45acf04544ed1561c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -208,12 +208,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.7
+  m_fontSize: 54.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 80
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -500,7 +500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8895789030651206203, guid: 14e560ae2ad064092a2556cad7525362, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -34
+      value: -42
       objectReference: {fileID: 0}
     - target: {fileID: 8895789031386085793, guid: 14e560ae2ad064092a2556cad7525362, type: 3}
       propertyPath: m_RootOrder
