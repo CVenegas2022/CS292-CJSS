@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/FinalDemo2 1/titleScreenDemo2-1.unity
     guid: be5d19b9643144474996a66653484a03
   - enabled: 1
-    path: Assets/creditScene.unity
+    path: Assets/FinalDemo2 1/creditScene.unity
     guid: 624e1615b1640439eadf7cf2b2c7c0ca
   - enabled: 1
     path: Assets/Tutorial/tutorial2.unity
