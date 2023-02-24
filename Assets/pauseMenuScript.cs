@@ -54,8 +54,10 @@ public class pauseMenuScript : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+        // Application.Quit();
         SceneManager.LoadScene("gameOverScreenDemo2-1");
+        Time.timeScale = 1f;
+        gameIsPaused = false;
     }
 }
 

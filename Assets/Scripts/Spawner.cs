@@ -42,7 +42,7 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if (time < 20) {
+        if (time < 10) {
             if (timer > timeToSpawn) {
                 float randomNumber = Random.Range(0f, 100f);
                 if (randomNumber < 33) {
@@ -66,20 +66,20 @@ public class Spawner : MonoBehaviour
             }
         }
 
-        if (time >= 25 && time < 45) {
+        if (time >= 15 && time < 35) {
             timeToSpawn = 1.5f;
             if (timer > timeToSpawn) {
                 float randomNumber = Random.Range(0f, 100f);
                 if (randomNumber < 20) {
-                    // Debug.Log(timer);
-                    GameObject newMediumObstacle1 = Instantiate(mediumObstacle2_1);
-                    Destroy(newMediumObstacle1, 10);
+                    // Debug.Log(timer);  
+                    GameObject newEasyObstacle1 = Instantiate(easyObstacle2_1);
+                    Destroy(newEasyObstacle1, 10);
                     timer = 0;
                 } 
                 else if (randomNumber >= 20 && randomNumber < 40) {
                     // Debug.Log(timer);
-                    GameObject newMediumObstacle2 = Instantiate(mediumObstacle2_2);
-                    Destroy(newMediumObstacle2, 10);
+                    GameObject newEasyObstacle2 = Instantiate(easyObstacle2_2);
+                    Destroy(newEasyObstacle2, 10);
                     timer = 0;
                 }
                 else if (randomNumber >= 40 && randomNumber < 60) {
@@ -90,35 +90,33 @@ public class Spawner : MonoBehaviour
                 }
                 else if (randomNumber >= 60 && randomNumber < 80) {
                     // Debug.Log(timer);
-                    GameObject newEasyObstacle1 = Instantiate(easyObstacle2_1);
-                    Destroy(newEasyObstacle1, 10);
+                    GameObject newMediumObstacle1 = Instantiate(mediumObstacle2_1);
+                    Destroy(newMediumObstacle1, 10);
                     timer = 0;
                 }
                 else {
                     // Debug.Log(timer);
-                    GameObject newEasyObstacle2 = Instantiate(easyObstacle2_2);
-                    Destroy(newEasyObstacle2, 10);
+                    GameObject newMediumObstacle2 = Instantiate(mediumObstacle2_2);
+                    Destroy(newMediumObstacle2, 10);
                     timer = 0;
                 }
             }
         }
 
-        if (time >= 47 && time <=48 && healthCount == 0) {
+        if (time >= 37 && time <= 38 && healthCount == 0) {
             GameObject newHealth = Instantiate(health);
             Destroy(newHealth, 10);
             healthCount += 1;
         }
 
 
-        if (time >= 50 && time < 70) {
+        if (time >= 40 && time < 60) {
             timeToSpawn = 1.2f;
             if (timer > timeToSpawn) {
                 float randomNumber = Random.Range(0f, 200f);
                 if (randomNumber < 20) {
                     // Debug.Log(timer);
-                    GameObject newEasyObstacle1 = Instantiate(easyObstacle3_1);
-                    Destroy(newEasyObstacle1, 10);
-                    timer = 0;
+                    
                 } 
                 else if (randomNumber >= 20 && randomNumber < 40) {
                     // Debug.Log(timer);
@@ -128,6 +126,9 @@ public class Spawner : MonoBehaviour
                 }
                 else if (randomNumber >= 40 && randomNumber < 60) {
                     // Debug.Log(timer);
+                    GameObject newEasyObstacle1 = Instantiate(easyObstacle3_1);
+                    Destroy(newEasyObstacle1, 10);
+                    timer = 0;
                     GameObject newEasyObstacle3 = Instantiate(easyObstacle3_3);
                     Destroy(newEasyObstacle3, 10);
                     timer = 0;
@@ -171,13 +172,13 @@ public class Spawner : MonoBehaviour
             }
         }
 
-        if (time >= 72 && time <= 73 && healthCount == 1) {
+        if (time >= 62 && time <= 63 && healthCount == 1) {
             GameObject newHealth = Instantiate(health);
             Destroy(newHealth, 10);
             healthCount += 1;
         }
 
-        if (time >= 75) {
+        if (time >= 65) {
             timeToSpawn = 1.1f;
             if (timer > timeToSpawn) {
                 float randomNumber = Random.Range(0f, 200f);

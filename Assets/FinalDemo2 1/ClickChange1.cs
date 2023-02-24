@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ClickChange1 : MonoBehaviour
 {
+    private GameObject AudioManager;
+    private AudioSource backmusic;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +22,8 @@ public class ClickChange1 : MonoBehaviour
     public void OnClickMainMenu() {
         // Debug.Log("Changing to the titleScreen(2)");
         SceneManager.LoadScene("titleScreenDemo2-1");
-        
-        GameObject AudioManager;
-        AudioSource backmusic;
-
+        // GameObject AudioManager;
+        // AudioSource backmusic;
         AudioManager = GameObject.Find("AudioManager");
         backmusic = AudioManager.GetComponent<AudioSource>();
         backmusic.Play();
@@ -32,7 +32,7 @@ public class ClickChange1 : MonoBehaviour
     public void OnClickRestart() {
         // Debug.Log("Changing to the restartScreen");
         SceneManager.LoadScene("DemoScene2-1");
-
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 

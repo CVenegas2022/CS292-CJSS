@@ -11,7 +11,7 @@ public class Jump : MonoBehaviour
     public Collider2D ground;
     public AudioSource jumpSource;
     public AudioSource runSource;
-    public AudioSource hitSource;
+    // public AudioSource hitSource;
     private bool isGrounded;
     private bool canTravel;
     private bool keyHeld;
