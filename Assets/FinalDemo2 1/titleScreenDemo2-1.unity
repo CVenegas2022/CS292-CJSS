@@ -783,7 +783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6147103190659900767, guid: def6fb010fd0f4be7bad1a5c8d55a263, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: BGM1OffButton
+      value: BGM1Button
       objectReference: {fileID: 0}
     - target: {fileID: 6147103190659900767, guid: def6fb010fd0f4be7bad1a5c8d55a263, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

@@ -7,6 +7,8 @@ public class MainMenuScript : MonoBehaviour
 {
     public string gameScene;
     public string creditScene;
+    public GameObject AudioManager;
+    public AudioSource backmusic;
 
     private void Awake()
     {
@@ -41,14 +43,10 @@ public class MainMenuScript : MonoBehaviour
     }
 
      public void BGM1OffButton() {
-        GameObject AudioManager;
-        AudioSource backmusic;
-
         AudioManager = GameObject.Find("AudioManager");
         backmusic = AudioManager.GetComponent<AudioSource>();
-        if(backmusic.isPlaying) {
-            backmusic.Pause();
-        }
+        if(backmusic.isPlaying) backmusic.Pause();
+        else backmusic.Play();
     }
     
 }

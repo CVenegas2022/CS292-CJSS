@@ -20,19 +20,19 @@ public class ClickChange1 : MonoBehaviour
     public void OnClickMainMenu() {
         // Debug.Log("Changing to the titleScreen(2)");
         SceneManager.LoadScene("titleScreenDemo2-1");
-        
-        GameObject AudioManager;
-        AudioSource backmusic;
-
-        AudioManager = GameObject.Find("AudioManager");
-        backmusic = AudioManager.GetComponent<AudioSource>();
-        backmusic.Play();
-    }
+        /*GameObject obj;
+        obj = GameObject.Find("AudioManager2");
+        obj.GetComponent<MainMenuScript>().BGM1Button();    
+    */}
 
     public void OnClickRestart() {
         // Debug.Log("Changing to the restartScreen");
         SceneManager.LoadScene("DemoScene2-1");
-
+        /*
+        GameObject obj;
+        obj = GameObject.Find("AudioManager2");
+        obj.GetComponent<MainMenuScript>().BGM1Button();
+    */
     }
 
 
