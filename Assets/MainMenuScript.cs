@@ -42,12 +42,13 @@ public class MainMenuScript : MonoBehaviour
         SceneManager.LoadScene("tutorial1");
     }
 
-     public void BGM1OffButton() {
+     public void BGM1Button() {
         AudioManager = GameObject.Find("AudioManager");
         backmusic = AudioManager.GetComponent<AudioSource>();
         if(backmusic.isPlaying) backmusic.Pause();
         else backmusic.Play();
     }
+
     
 }
 
