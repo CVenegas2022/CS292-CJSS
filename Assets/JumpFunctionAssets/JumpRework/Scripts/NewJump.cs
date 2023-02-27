@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class NewJump : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class NewJump : MonoBehaviour
     private bool hitCeiling;
     private bool triggerFall;
     private bool fallTriggered;
+    //public bool testBoolean = false; //test for raycast
+    //private RaycastHit2D[] list;
     private Vector3 jumpPos;
 
     // Used these two sources to get animation to work correctly https://www.youtube.com/watch?v=07GUMwiOPBE and 
@@ -40,6 +43,8 @@ public class NewJump : MonoBehaviour
 
         hitCeiling=false;
         triggerFall=false;
+
+        //list=new RaycastHit2D[];
     }
 
     // Update is called once per frame
@@ -52,8 +57,20 @@ public class NewJump : MonoBehaviour
     {
         //used this forum to figure out how to reference an object's BoxCollider2D: https://forum.unity.com/threads/check-if-two-colliders-are-touching.693817/
         
+        //test code for Raycast
+        /*
+        if(gameObject.GetComponent<BoxCollider2D>().Raycast(Vector2.down, new RaycastHit2D[5], 2.7f)>0)
+        {
+            Debug.Log("Grounded");
+        }
+        else
+        {
+            Debug.Log("Not grounded");
+        }*/
+
         //if touching the ground
-        if(gameObject.GetComponent<BoxCollider2D>().IsTouching(ground))
+        //if(gameObject.GetComponent<BoxCollider2D>().IsTouching(ground))
+        if(gameObject.GetComponent<BoxCollider2D>().Raycast(Vector2.down, new RaycastHit2D[5], 1.2f)>0)
         {
             //set jumpPos to current position with max height added to the y value
             jumpPos = new Vector3(transform.position.x, transform.position.y+maxHeight, transform.position.z);
@@ -73,7 +90,7 @@ public class NewJump : MonoBehaviour
             //mark as on the ground
             isGrounded=true;
 
-            //
+            
             hitCeiling=false;
             triggerFall=false;
             fallTriggered=false;
@@ -172,6 +189,10 @@ public class NewJump : MonoBehaviour
                     fallTriggered=true;
                 }
                 hitCeiling=false;
+            }
+            if(!Input.GetKey("up"))
+            {
+                keyHeld=false;
             }
         }
         
