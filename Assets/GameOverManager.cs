@@ -16,8 +16,8 @@ public class GameOverManager : MonoBehaviour
     {
         highscore = PlayerPrefs.GetFloat("highscore", 0);
         finalscore = PlayerPrefs.GetFloat("finalscore", 0);
-        highscoreText.text = "HIGHSCORE: " + highscore.ToString();
-        scoreText.text = "SCORE: " + finalscore.ToString();
+        highscoreText.text = "HIGHSCORE: " + highscore.ToString("0.00");
+        scoreText.text = "SCORE: " + finalscore.ToString("0.00");
     }
 
     // Update is called once per frame
