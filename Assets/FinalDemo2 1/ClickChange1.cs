@@ -22,8 +22,7 @@ public class ClickChange1 : MonoBehaviour
     public void OnClickMainMenu() {
         // Debug.Log("Changing to the titleScreen(2)");
         SceneManager.LoadScene("titleScreenDemo2-1");
-        GameObject AudioManager;
-        AudioManager = GameObject.Find("AudioManager");
+        GameObject AudioManager = GameObject.Find("AudioManager");
         AudioSource backmusic = AudioManager.GetComponent<AudioSource>();
         backmusic.Play();
     }
