@@ -1947,6 +1947,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 191270728361945175, guid: dcdef090038034ef9b6af3531e690e3a, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 191270728361945175, guid: dcdef090038034ef9b6af3531e690e3a, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 960
+      objectReference: {fileID: 0}
     - target: {fileID: 191270728361945177, guid: dcdef090038034ef9b6af3531e690e3a, type: 3}
       propertyPath: m_Name
       value: pauseMenuCanvas
@@ -2081,6 +2089,14 @@ PrefabInstance:
     - target: {fileID: 2574844362595482048, guid: a13b4a53196844de9a3b7ddf2ba22ee5, type: 3}
       propertyPath: m_Name
       value: healthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2574844362595482109, guid: a13b4a53196844de9a3b7ddf2ba22ee5, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2574844362595482109, guid: a13b4a53196844de9a3b7ddf2ba22ee5, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 2574844362595482111, guid: a13b4a53196844de9a3b7ddf2ba22ee5, type: 3}
       propertyPath: m_Pivot.x

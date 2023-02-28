@@ -20,7 +20,7 @@ public class timer : MonoBehaviour
     {
         highscore = PlayerPrefs.GetFloat("highscore", 0);
         // timerText.text = currentTime.ToString();
-        highscoreText.text = "HIGHSCORE: " + highscore.ToString();
+        highscoreText.text = "HIGHSCORE: " + highscore.ToString("0.00");
         shouldUpdate=true;
     }
 
@@ -30,7 +30,9 @@ public class timer : MonoBehaviour
         if(shouldUpdate)
         {
             currentTime = countDown ? currentTime -= Time.deltaTime : currentTime += Time.deltaTime;
-            timerText.text = currentTime.ToString();
+            //double cTime = (double)currentTime;
+            timerText.text = currentTime.ToString("0.00");
+            //timerText.text = currentTime.ToString();
             PlayerPrefs.SetFloat("finalscore", currentTime);
             if (highscore < currentTime)
                 PlayerPrefs.SetFloat("highscore", currentTime);
@@ -45,7 +47,7 @@ public class timer : MonoBehaviour
             shouldUpdate=false;
 
             highscore = PlayerPrefs.GetFloat("highscore", 0);
-            highscoreText.text = "HIGHSCORE: " + highscore.ToString();
+            highscoreText.text = "HIGHSCORE: " + highscore.ToString("0.00");
             SceneManager.LoadScene("gameOverScreenDemo2-1");
         }
     }
