@@ -67,10 +67,12 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider2D)
     {
-        if(collider2D.gameObject.CompareTag("health") && hbHealthManager.totalCherries < 3) {
+        if(collider2D.gameObject.CompareTag("health")) {
             Destroy(collider2D.gameObject);
-            hbHealthManager.totalCherries++;
             healthSource.Play();
+            if(hbHealthManager.totalCherries < 3){
+                hbHealthManager.totalCherries ++;
+            }
         }
     }
 

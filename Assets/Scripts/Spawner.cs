@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    public GameObject level1UI;
+    public GameObject level2UI;
+    public GameObject level3UI;
+    public GameObject level4UI;
     public GameObject health;
     private int healthCount = 0;
     public GameObject easyObstacle1_1;
@@ -35,14 +39,21 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        // level1UI.SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;
-        if (time < 10) {
+        if (time >= 1 && time < 2) {
+            level1UI.SetActive(true);
+        }
+        if (time >= 5) {
+            level1UI.SetActive(false);
+        }
+
+        if (time >= 2 && time < 15) {
             if (timer > timeToSpawn) {
                 float randomNumber = Random.Range(0f, 100f);
                 if (randomNumber < 33) {
@@ -66,7 +77,14 @@ public class Spawner : MonoBehaviour
             }
         }
 
-        if (time >= 15 && time < 35) {
+        if (time >= 18.5 && time < 19) {
+            level2UI.SetActive(true);
+        }
+        if (time >= 23) {
+            level2UI.SetActive(false);
+        }
+
+        if (time >= 20 && time < 40) {
             timeToSpawn = 1.5f;
             if (timer > timeToSpawn) {
                 float randomNumber = Random.Range(0f, 100f);
@@ -103,20 +121,29 @@ public class Spawner : MonoBehaviour
             }
         }
 
-        if (time >= 37 && time <= 38 && healthCount == 0) {
+        if (time >= 42.5 && time < 43) {
+            level3UI.SetActive(true);
+        }
+        if (time >= 46) {
+            level3UI.SetActive(false);
+        }
+
+        if (time >= 42 && time <= 43 && healthCount == 0) {
             GameObject newHealth = Instantiate(health);
             Destroy(newHealth, 10);
             healthCount += 1;
         }
 
 
-        if (time >= 40 && time < 60) {
+        if (time >= 45 && time < 65) {
             timeToSpawn = 1.2f;
             if (timer > timeToSpawn) {
                 float randomNumber = Random.Range(0f, 200f);
                 if (randomNumber < 20) {
                     // Debug.Log(timer);
-                    
+                    GameObject newEasyObstacle1 = Instantiate(easyObstacle3_1);
+                    Destroy(newEasyObstacle1, 10);
+                    timer = 0;
                 } 
                 else if (randomNumber >= 20 && randomNumber < 40) {
                     // Debug.Log(timer);
@@ -126,9 +153,6 @@ public class Spawner : MonoBehaviour
                 }
                 else if (randomNumber >= 40 && randomNumber < 60) {
                     // Debug.Log(timer);
-                    GameObject newEasyObstacle1 = Instantiate(easyObstacle3_1);
-                    Destroy(newEasyObstacle1, 10);
-                    timer = 0;
                     GameObject newEasyObstacle3 = Instantiate(easyObstacle3_3);
                     Destroy(newEasyObstacle3, 10);
                     timer = 0;
@@ -172,13 +196,22 @@ public class Spawner : MonoBehaviour
             }
         }
 
-        if (time >= 62 && time <= 63 && healthCount == 1) {
+        // if (time >= 67 && time < 68) {
+        //     level3UI.SetActive(true);
+        // }
+
+        if (time >= 67 && time <= 68 && healthCount == 1) {
+            level4UI.SetActive(true);
             GameObject newHealth = Instantiate(health);
             Destroy(newHealth, 10);
             healthCount += 1;
         }
 
-        if (time >= 65) {
+        if (time >= 71.5) {
+            level4UI.SetActive(false);
+        }
+
+        if (time >= 70) {
             timeToSpawn = 1.1f;
             if (timer > timeToSpawn) {
                 float randomNumber = Random.Range(0f, 200f);
