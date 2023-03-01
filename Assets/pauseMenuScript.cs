@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class pauseMenuScript : MonoBehaviour
 {
+    // public GameObject level1UI;
+    // public GameObject level2UI;
+    // public GameObject level3UI;
+    // public GameObject level4UI;
     public static bool gameIsPaused = false;
     public GameObject pauseMenuUI;
     public string currentScene;
@@ -67,6 +71,10 @@ public class pauseMenuScript : MonoBehaviour
 
     void Pause()
     {
+        // level1UI.SetActive(false);
+        // level2UI.SetActive(false);
+        // level3UI.SetActive(false);
+        // level4UI.SetActive(false);
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         gameIsPaused = true;
