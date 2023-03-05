@@ -35,7 +35,7 @@ public class MainMenuScript : MonoBehaviour
 
     public void openRanking()
     {
-        SceneManager.LoadScene(RankingSystem);
+        SceneManager.LoadScene("RankingSystem");
     }
 
     public void openTutorial() {

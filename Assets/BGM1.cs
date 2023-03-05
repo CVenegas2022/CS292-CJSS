@@ -14,10 +14,4 @@ public class BGM1 : MonoBehaviour
         if(backmusic.isPlaying) return;
         else backmusic.Play();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

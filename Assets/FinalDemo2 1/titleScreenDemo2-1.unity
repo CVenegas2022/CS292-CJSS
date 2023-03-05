@@ -348,7 +348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5066574241197045140, guid: d2f631a94d5d742c5860aaa86f017b61, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: openHighScores
+      value: openRanking
       objectReference: {fileID: 0}
     - target: {fileID: 5066574241197045140, guid: d2f631a94d5d742c5860aaa86f017b61, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
