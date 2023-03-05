@@ -33,9 +33,9 @@ public class MainMenuScript : MonoBehaviour
          SceneManager.LoadScene(creditScene);
     }
 
-    public void openHighScores()
+    public void openRanking()
     {
-        // Add logic to open the high scores here
+        SceneManager.LoadScene(RankingSystem);
     }
 
     public void openTutorial() {
