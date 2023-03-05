@@ -44,4 +44,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tutorial/tutorial3.unity
     guid: c9f3cfe0a2abd124c91d987718a36b44
+  - enabled: 1
+    path: Assets/FinalDemoDefinitiveEdition/GlobalScenes/DefinitiveTitleScreen.unity
+    guid: 317c5ae3cc464544c9b2bdc4fda4d172
+  - enabled: 1
+    path: Assets/FinalDemoDefinitiveEdition/GlobalScenes/DefinitiveGameOver.unity
+    guid: a99be1a99223b7a4682c051fa01624e1
+  - enabled: 1
+    path: Assets/FinalDemoDefinitiveEdition/GlobalScenes/DefinitivelCreditScene.unity
+    guid: 466f23665fae6c24bb9f592a35a8b62f
+  - enabled: 1
+    path: Assets/FinalDemoDefinitiveEdition/EED2/Scenes/EED2_Scene01.unity
+    guid: 4e203e354199ff04498d9f4374f31da1
+  - enabled: 1
+    path: Assets/FinalDemoDefinitiveEdition/EED1/Scenes/EED2_Scene02.unity
+    guid: 2cf1f4ee7b691544b891ac2e8ad26f0e
+  - enabled: 1
+    path: Assets/FinalDemoDefinitiveEdition/GlobalScenes/DefinitiveBaseGame.unity
+    guid: 7ba37cf2fd929ed489aee035b56d469f
   m_configObjects: {}
