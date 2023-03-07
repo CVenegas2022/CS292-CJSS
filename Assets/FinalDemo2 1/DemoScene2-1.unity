@@ -2117,9 +2117,31 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 779721437, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779721440, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 326.8272
+      objectReference: {fileID: 0}
+    - target: {fileID: 779721440, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 118.5668
+      objectReference: {fileID: 0}
+    - target: {fileID: 779721440, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.1504
+      objectReference: {fileID: 0}
     - target: {fileID: 779721440, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 110
+      value: 95.4854
+      objectReference: {fileID: 0}
+    - target: {fileID: 920248077, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_text
+      value: 'Speed x4
+
+        Don''t forget about cherries'
       objectReference: {fileID: 0}
     - target: {fileID: 924331573, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
       propertyPath: m_IsActive
@@ -2129,9 +2151,63 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 110
       objectReference: {fileID: 0}
+    - target: {fileID: 1097499289, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1097499290, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118974448, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118974450, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_text
+      value: 'Speed x2
+
+        Be careful with spikes'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118974450, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_fontSize
+      value: 38.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118974450, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_margin.x
+      value: 6.5549927
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118974450, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_margin.z
+      value: 6.554962
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372303295, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372303296, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372303297, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_text
+      value: "Speed x3\nBe ready for \nincreasing diffculty  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372303297, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_fontSize
+      value: 35.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372303297, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_margin.w
+      value: -14.0463295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372303297, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_margin.y
+      value: -7.4913406
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039133939, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2039133942, guid: b9904c8d60eec41c1a4bc69147820f82, type: 3}
       propertyPath: m_AnchoredPosition.y
