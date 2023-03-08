@@ -27,6 +27,18 @@ public class DefinitiveMainMenuScript : MonoBehaviour
         {
             gameScene="EED2_Scene01";
         }
+        else if(Input.GetKey("up") || Input.GetKey("down"))
+        {
+            gameScene="EEFlipScene";
+        }
+        else if(Input.GetKey("left") || Input.GetKey("right"))
+        {
+            gameScene="EEMirrorScene";
+        }
+        else if(Input.GetKey("left ctrl"))
+        {
+            gameScene="EEMoonJumpScene";
+        }
         SceneManager.LoadScene(gameScene, LoadSceneMode.Single);
         pauseMenuScript.gameIsPaused = false;
     }
