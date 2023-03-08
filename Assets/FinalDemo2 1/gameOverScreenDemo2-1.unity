@@ -525,6 +525,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1114255237}
+        m_TargetAssemblyTypeName: GameOverManager, Assembly-CSharp
+        m_MethodName: OnApplicationQuit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &937129982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,17 +643,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114255235}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.76770836, y: 0.76770836, z: 0.76770836}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1132901510}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 479.99997, y: 269.89417}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1114255237
@@ -660,6 +672,7 @@ MonoBehaviour:
   highscoreText: {fileID: 1330585577}
   highscore: 0
   finalscore: 0
+  HighScores: []
 --- !u!1 &1132901506
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,7 +766,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 246732179}
-  - {fileID: 1114255236}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -774,7 +786,7 @@ GameObject:
   - component: {fileID: 1330585578}
   - component: {fileID: 1330585577}
   m_Layer: 5
-  m_Name: Text
+  m_Name: highscore Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -909,7 +921,7 @@ GameObject:
   - component: {fileID: 1544322475}
   - component: {fileID: 1544322474}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: score Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1112,7 +1124,7 @@ GameObject:
   - component: {fileID: 1656488596}
   - component: {fileID: 1656488595}
   m_Layer: 5
-  m_Name: Text
+  m_Name: gameover Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1387,13 +1399,33 @@ PrefabInstance:
       value: Restart
       objectReference: {fileID: 0}
     - target: {fileID: 9060968425025362258, guid: 40213d27d01d1477db5a600ff871b051, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060968425025362258, guid: 40213d27d01d1477db5a600ff871b051, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060968425025362258, guid: 40213d27d01d1477db5a600ff871b051, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 749781196}
     - target: {fileID: 9060968425025362258, guid: 40213d27d01d1477db5a600ff871b051, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 749781193}
+      objectReference: {fileID: 1114255237}
+    - target: {fileID: 9060968425025362258, guid: 40213d27d01d1477db5a600ff871b051, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: OnApplicationQuit
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060968425025362258, guid: 40213d27d01d1477db5a600ff871b051, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GameOverManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9060968425025362258, guid: 40213d27d01d1477db5a600ff871b051, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9060968425025362259, guid: 40213d27d01d1477db5a600ff871b051, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

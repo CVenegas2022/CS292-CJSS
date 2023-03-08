@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
      public AudioSource _audioSource;
      private GameObject[] other;
      private bool NotFirst = false;
+     
      private void Awake()
      {
          other = GameObject.FindGameObjectsWithTag("Music");
