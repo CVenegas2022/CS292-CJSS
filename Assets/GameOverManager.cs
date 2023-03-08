@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class GameOverManager : MonoBehaviour
 {
@@ -12,8 +13,7 @@ public class GameOverManager : MonoBehaviour
     public float highscore = 0f;
     public float finalscore = 0f; 
 
-    private const int LeaderboardLength = 5;
-    public List<float> HighScores = new List<float> ();
+    private float[] HighScores = new float[] {0, 0, 0, 0, 0};
 
     // Start is called before the first frame update
     void Start()
@@ -22,35 +22,27 @@ public class GameOverManager : MonoBehaviour
         finalscore = PlayerPrefs.GetFloat("finalscore", 0);
         highscoreText.text = "HIGHSCORE: " + highscore.ToString("0.00");
         scoreText.text = "SCORE: " + finalscore.ToString("0.00");
+        String temp = "";
+        Debug.Log(temp);
         SaveHighScore(finalscore);
+        if(highscore != 0) {
+            SaveHighScore(highscore);
+        }
+        for(int i = 0; i < HighScores.Length; i++) {
+            temp+=HighScores[i]+"\n";
+        }
+        Debug.Log(temp);
     }
 
 
     public void SaveHighScore (float score) {
+        if (score > HighScores[4]) {    
+            HighScores[4] = score;       
+            Array.Reverse(HighScores);
+        } 
         int i = 1;
-        while (i<=LeaderboardLength && PlayerPrefs.HasKey("HighScore"+i+"score")) {
-            score = PlayerPrefs.GetFloat ("finalscore");
-            HighScores.Add (score);
-            i++;
-        }
-        if (HighScores.Count == 0) {            
-            HighScores.Add (score);
-        } else {
-            for (i=1; i<=HighScores.Count && i<=LeaderboardLength; i++) {
-                if (score > HighScores [i - 1]) {
-                    HighScores.Insert (i - 1, score);
-                    break;
-                }            
-                if (i == HighScores.Count && i < LeaderboardLength) {
-                    HighScores.Add (score);
-                    break;
-                }
-            }
-        }
-         
-        i = 1;
-        while (i<=LeaderboardLength && i<=HighScores.Count) {
-            PlayerPrefs.SetFloat ("HighScore" + i + "score", HighScores[i - 1]);
+        while (i <= HighScores.Length) {
+            PlayerPrefs.SetFloat ("Rank" + i, HighScores[i - 1]);
             i++;
         }
          
@@ -58,7 +50,7 @@ public class GameOverManager : MonoBehaviour
  
     public float GetHighScore (int i)
     {   
-        float rankscore = PlayerPrefs.GetFloat ("HighScore" + i + "score", HighScores[i - 1]); 
+        float rankscore = PlayerPrefs.GetFloat ("Rank" + i, 0); 
         return rankscore;
     }
      

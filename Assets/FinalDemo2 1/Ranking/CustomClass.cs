@@ -4,12 +4,8 @@ using UnityEngine;
 using TMPro;
 
 public class CustomClass : MonoBehaviour {
-    public HighScore ghScore;  //you have to link the object here
-    float score;
-    List<float> ghScoreList;  // whn  u retrive saved score
+    private GameOverManager ghScore;  //you have to link the object here
 
-    public TextMeshProUGUI finalscoreText;
-    public float finalscore = 0f; 
     [Header("Component")]
     [Header("Timer Settings")]
 
@@ -26,11 +22,9 @@ public class CustomClass : MonoBehaviour {
 
     void Start()
     {
-        finalscore = PlayerPrefs.GetFloat("finalscore", 0);
         //condition for posting score
-        ghScore.SaveHighScore(finalscore);
  
-        rank1= finalscore;
+        rank1= ghScore.GetHighScore(1);
         rank2= ghScore.GetHighScore(2);
         rank3= ghScore.GetHighScore(3);
         rank4= ghScore.GetHighScore(4);
