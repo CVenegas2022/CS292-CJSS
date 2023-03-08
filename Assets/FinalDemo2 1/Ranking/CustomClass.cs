@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 
 public class CustomClass : MonoBehaviour {
-    private GameOverManager ghScore;  //you have to link the object here
+    public GameOverManager ghScore = new GameOverManager();  //you have to link the object here
 
     [Header("Component")]
     [Header("Timer Settings")]
