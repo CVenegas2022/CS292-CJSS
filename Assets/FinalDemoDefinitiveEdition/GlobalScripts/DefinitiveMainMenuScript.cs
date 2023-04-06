@@ -53,6 +53,11 @@ public class DefinitiveMainMenuScript : MonoBehaviour
          SceneManager.LoadScene(creditScene);
     }
 
+    public void openRanking()
+    {
+        SceneManager.LoadScene("RankingSystem");
+    }
+
     public void openHighScores()
     {
         // Add logic to open the high scores here
